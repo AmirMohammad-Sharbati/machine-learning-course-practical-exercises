@@ -56,3 +56,51 @@ For each K from 1 to max_k:
 - Plot the original image and the segmented image side by side for comparison.
 - Turn off axes for a cleaner visualization.
 - Plot the Elbow Method graph to show how WCSS changes with K and help estimate the optimal number of clusters.
+
+
+
+---
+## GMM:
+
+### 1. gaussian_pdf_all(X, mean, cov)
+#### Theory
+Computes the probability density of each data point under a multivariate Gaussian distribution:
+
+N(x∣μ,Σ)=1(2π)d/2∣Σ∣1/2exp⁡(−12(x−μ)TΣ−1(x−μ))
+N(x∣μ,Σ)=
+(2π)
+d/2
+∣Σ∣
+1/2
+1
+	​
+
+exp(−
+2
+1
+	​
+
+(x−μ)
+T
+Σ
+−1
+(x−μ))
+
+Where:
+- X is shape (n_samples, n_features)
+- Output is a vector of size (n_samples,)
+Purpose
+- GMM needs these densities to calculate responsibilities (soft cluster assignments).
+
+
+### 2. initialize_parameters(X, k, rng)
+Theory
+- We randomly initialize:
+- weights πₖ (sum to 1),
+- means μₖ (random data points),
+- covariances Σₖ (start with identity or sample covariance).
+This gives a starting point for EM.
+Purpose
+- GMM is sensitive to initialization; this step makes EM start somewhere reasonable.
+
+
