@@ -77,7 +77,7 @@ ml-course-assignments/
 
 ### 1. Supervised Learning
 
-> **Topics:** Regression, Classification, Evaluation Metrics, Ensemble Learning
+> **Topics:** Regression, Classification, Ensemble Learning (Random Forest)
 
 | Notebook | Description |
 |----------|-------------|
@@ -110,12 +110,12 @@ ml-course-assignments/
 
 ### 4. Computer Vision
 
-> **Topics:** CNNs, Transfer Learning, Fine-tuning, Neural Style Transfer
+> **Topics:** CNNs, Transfer Learning, Fine-tuning, Neural Style Transfer (NST)
 
 | Notebook | Description |
 |----------|-------------|
 | **CNN Fine-tuning** | Image classification on the **Flowers dataset** using **TensorFlow/Keras**. Builds a **VGG-style CNN from scratch** and **fine-tunes ResNet50** in stages. Compares approaches using accuracy, precision, recall, F1, and ROC/AUC. |
-| **CNN from Scratch & Neural Style Transfer** | Two-part notebook built in **PyTorch**: (1) a **convolutional layer from scratch** to understand convolution mechanics, (2) **Neural Style Transfer** with a pretrained VGG19 to apply artistic styles to images. |
+| **CNN from Scratch & Neural Style Transfer** | Two-part notebook: (1) a **convolutional layer from scratch** to understand convolution mechanics, (2) **Neural Style Transfer** with a pretrained VGG19 to apply artistic styles to images. |
 
 ---
 
